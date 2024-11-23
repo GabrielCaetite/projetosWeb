@@ -1,0 +1,19 @@
+LARAVEL - framework
+
+PROBLEMA: GERENCIAMENTO DE APARELHOS DOS CLIENTES.
+O Sistema (Ney Som Eletrônica) tem como objetivos principais  realizar o gerenciamento e controle dos aparelhos na assitencia.
+
+ATORES: clientes; funcionarios(atendente, tecnico, administrador);
+	- O cliente poderá acessar o Sistema para acompanhar o andamento do conserto do aparelho ou comprar.
+	- O atendente será responsavel em cadastrar o aparelho na assistencia para fins de correcoes.
+	- O tecnico ficará responsavel em adicionar informacoes relacionadas a manutencao dos aparelhos dos clientes.
+	- administrador gerencia o sistema de modo geral.
+
+FUNCOES:
+				- login - o primeiro acesso sera do administrador ou assistencia, depois os usuarios finais como os clientes.
+				
+				- cadastrar cliente: o atendente cadastra o cliente com informacoes de contato(nome;cpf;telefone;email(opcional);endereco).
+				- cadastrar aparelho: o atendente cadastra o equipamento inserindo os dados principais(tipo, modelo, marca, numero de serie).
+				- consultar aparelho: o cliente poderá consultar o andamento dos aparelhos.
+				- gerar orcamento: o atendente registra o orcamento vinculado ao aparelho. o cliente avalia o orcamento passado e decide se aprova ou nao. se aprovado, a ordem de servico sera gerada. 
+				
