@@ -1,19 +1,26 @@
 LARAVEL - framework
 
-PROBLEMA: GERENCIAMENTO DE APARELHOS DOS CLIENTES.
-O Sistema (Ney Som Eletrônica) tem como objetivos principais  realizar o gerenciamento e controle dos aparelhos na assitencia.
+PROBLEMA: CONTROLE DE APARELHOS DOS CLIENTES.
+MODULO 1 - O Sistema tem como objetivo gerenciar os reparos dos aparelhos dos clientes na assistencia
 
-ATORES: clientes; funcionarios(atendente, tecnico, administrador);
-	- O cliente poderá acessar o Sistema para acompanhar o andamento do conserto do aparelho ou comprar.
+ATORES: clientes, atendente, tecnico, administrador;
+	- O cliente poderá acessar o Sistema para acompanhar o andamento do conserto do seu aparelho.
 	- O atendente será responsavel em cadastrar o aparelho na assistencia para fins de correcoes.
 	- O tecnico ficará responsavel em adicionar informacoes relacionadas a manutencao dos aparelhos dos clientes.
 	- administrador gerencia o sistema de modo geral.
 
 FUNCOES:
-				- login - o primeiro acesso sera do administrador ou assistencia, depois os usuarios finais como os clientes.
+funcional
+	- login - o primeiro acesso sera do administrador ou assistencia, depois os usuarios finais.
 				
-				- cadastrar cliente: o atendente cadastra o cliente com informacoes de contato(nome;cpf;telefone;email(opcional);endereco).
-				- cadastrar aparelho: o atendente cadastra o equipamento inserindo os dados principais(tipo, modelo, marca, numero de serie).
-				- consultar aparelho: o cliente poderá consultar o andamento dos aparelhos.
-				- gerar orcamento: o atendente registra o orcamento vinculado ao aparelho. o cliente avalia o orcamento passado e decide se aprova ou nao. se aprovado, a ordem de servico sera gerada. 
+	- cadastrar cliente: o atendente cadastra o cliente com informacoes de contato(nome; cpf; telefone; email(opcional); endereço).
+	- cadastrar aparelho: o atendente cadastra o equipamento inserindo os dados principais(tipo, modelo, marca, numero de serie, data de entrada, data de retirada, observacoes).
+	- consultar aparelho: o cliente podera consultar o andamento dos aparelhos.
+	- gerar orcamento: o tecnico registra o orcamento vinculado ao aparelho. o cliente avalia o orcamento passado e decide se aprova ou nao. se aprovado, a ordem de servico sera gerada. caso contrario, o cliente pagara uma taxa de orçamento.
+	- finalizar manutencao: o atendente conclui o conserto de cada aparelho.
+
+nao funcional (funcionais que podem ser implementadas tambem)
+	- tempo de sessao de cada usuario: cada usuario tera um limite de sessão para evitar congestionamento;
+	- acessibilidade - o sistema deve ser acessivel a qualquer usuario, independente das condicoes dos mesmos;
+	- segurança - o sistema deve ser seguro  a fim de evitar acesso ou perda de dados.
 				
