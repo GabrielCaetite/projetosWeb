@@ -1,26 +1,24 @@
-LARAVEL - framework
+PROBLEMA: GESTÃO DE APARELHOS DOS CLIENTES.
+MODULO 1 - O Sistema tem como objetivo gerenciar os reparos dos aparelhos dos clientes na assistência.
 
-PROBLEMA: CONTROLE DE APARELHOS DOS CLIENTES.
-MODULO 1 - O Sistema tem como objetivo gerenciar os reparos dos aparelhos dos clientes na assistencia
+ATORES: Clientes, atendente, técnico, administrador;
 
-ATORES: clientes, atendente, tecnico, administrador;
 	- O cliente poderá acessar o Sistema para acompanhar o andamento do conserto do seu aparelho.
-	- O atendente será responsavel em cadastrar o aparelho na assistencia para fins de correcoes.
-	- O tecnico ficará responsavel em adicionar informacoes relacionadas a manutencao dos aparelhos dos clientes.
-	- administrador gerencia o sistema de modo geral.
+	- O atendente será responsável em cadastrar e consultar os aparelhos dos clientes.
+	- O técnico ficará responsável em consultar e editar informações relacionadas a manutenção dos aparelhos.
+	- Administrador gerencia o sistema de modo geral, determinando os níveis de acesso de cada usuário.
 
 FUNCOES:
-funcional
-	- login - o primeiro acesso sera do administrador ou assistencia, depois os usuarios finais.
-				
-	- cadastrar cliente: o atendente cadastra o cliente com informacoes de contato(nome; cpf; telefone; email(opcional); endereço).
-	- cadastrar aparelho: o atendente cadastra o equipamento inserindo os dados principais(tipo, modelo, marca, numero de serie, data de entrada, data de retirada, observacoes).
-	- consultar aparelho: o cliente podera consultar o andamento dos aparelhos.
-	- gerar orcamento: o tecnico registra o orcamento vinculado ao aparelho. o cliente avalia o orcamento passado e decide se aprova ou nao. se aprovado, a ordem de servico sera gerada. caso contrario, o cliente pagara uma taxa de orçamento.
-	- finalizar manutencao: o atendente conclui o conserto de cada aparelho.
+funcionais
+	- Login - o primeiro acesso será do administrador, pois possui mais privilegios. Depois os usuários finais. O administrador limita o uso do sistema com permissões de acesso, entre outras atividades.
+	- Cadastrar cliente: o atendente cadastra o cliente com informações de contato(nome; CPF; telefone; e-mail(opcional); endereço).
+	- Cadastrar aparelho: o atendente cadastra o equipamento inserindo os dados principais(tipo, modelo, marca, numero serial, data de entrada, data de retirada, observações).
+	- Consultar aparelho: cliente, atendente, e o técnico poderão consultar o andamento dos aparelhos.
+	- Gerar orçamento: o técnico registra o orçamento vinculado ao aparelho.
+	- Consultar orçamento: o técnico, o atendente e o cliente poderão consultar o orçamento. O cliente avalia o orçamento passado e decide se aprova ou não. Se aprovado, a ordem de serviço será gerada. Caso contrario, o cliente pagará uma taxa de orçamento, pré-definida.
+	- Finalizar aparelho: o técnico conclui o conserto do aparelho e finaliza manutenção.
 
-nao funcional (funcionais que podem ser implementadas tambem)
-	- tempo de sessao de cada usuario: cada usuario tera um limite de sessão para evitar congestionamento;
-	- acessibilidade - o sistema deve ser acessivel a qualquer usuario, independente das condicoes dos mesmos;
-	- segurança - o sistema deve ser seguro  a fim de evitar acesso ou perda de dados.
-				
+não funcionais (funcionais que podem ser implementadas também)
+	- Tempo de sessão de cada usuário: cada usuário terá um limite de sessão para evitar congestionamento;
+	- Acessibilidade - o sistema deve ser acessível a qualquer usuário, independente das condições dos mesmos;
+	- Segurança - o sistema deve ser seguro a fim de evitar perda de dados ou acesso irrestrito.
